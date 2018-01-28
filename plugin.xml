@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-market-availability" version="1.0.0">
+    <name>Play Store Availability</name>
+    <description>Cordova Plugin for checking Google Play Store availability</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,market,play,store,availability</keywords>
+    <js-module src="www/play-store-availability.js" name="PlayStoreAvailability">
+        <clobbers target="playStoreAvailability" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="PlayStoreAvailability">
+                <param name="android-package" value="plus.atama.cordova.plugins.marketavailability.PlayStoreAvailability"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/PlayStoreAvailability.java" target-dir="src/plus/atama/cordova/plugins/marketavailability" />
+        <framework src="com.google.android.gms:play-services-gcm:+" />
+    </platform>
+</plugin>

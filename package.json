@@ -1,0 +1,26 @@
+{
+  "name": "cordova-plugin-market-availability",
+  "version": "1.0.0",
+  "description": "Cordova Plugin for checking Google Play Store availability",
+  "cordova": {
+    "id": "cordova-plugin-market-availability",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ippeiukai/cordova-plugin-market-availability"
+  },
+  "keywords": [
+    "cordova",
+    "market",
+    "play",
+    "store",
+    "availability",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Ippei Ukai",
+  "license": "MIT"
+}
